@@ -1,0 +1,26 @@
+[
+	{
+		"name": "drugInformationCollection",
+		"policy": "OR('Org1MSP.member','Org2MSP.member','Org3MSP.member','Org4MSP.member')",
+		"requiredPeerCount": 0,
+		"maxPeerCount": 3,
+		"blockToLive": 100,
+		"memberOnlyRead": true
+	},
+	{
+		"name": "queryCollection",
+		"policy": "OR('Org1MSP.member','Org3MSP.member')",
+		"requiredPeerCount": 0,
+		"maxPeerCount": 3,
+		"blockToLive": 100,
+		"memberOnlyRead": true
+	},
+	{
+		"name": "modifyCollection",
+		"policy": "OR('Org1MSP.member','Org3MSP.member')",
+		"requiredPeerCount": 0,
+		"maxPeerCount": 3,
+		"blockToLive": 100,
+		"memberOnlyRead": true
+	}
+]
